@@ -131,7 +131,7 @@ html{
     box-shadow: 0 0 1rem #0ef;
 }
 span{
-    color:#0ef
+    color:#0ef;
 }
 .btn{
     display:inline-block;
@@ -154,15 +154,12 @@ span{
     align-items: center;
     margin-top: 9px;
 }
+
+
 .imagebg{margin-top: 30px;
     width:100%;
     height:auto;
-    box-shadow: 0px 0px 3rem 5px #0ef;
-
-    
-    
-
-}
+    box-shadow: 0px 0px 3rem 5px #0ef;}
 .home-img{
     width:32vw;
     height:410px;
@@ -172,13 +169,10 @@ span{
     margin-right: 90px;
 
 }
-.imagebg img{
+.imagebg img{border-radius: 100px;
     width:100%;
     height:auto;
     opacity: 0.8;
-    
-    
-
 }
 
 #about{display: flex;
@@ -190,6 +184,7 @@ span{
  .aboutimg{width:36%;
     height:50%;
     padding: 50px;
+
     /* box-shadow: 0px 0px 3rem 5px #0ef; */
 
 
@@ -200,9 +195,10 @@ span{
     position: relative;
     bottom: 75px;
     right: 90px;
-    box-shadow: 0px 0px 3rem 5px #0ef;
+    box-shadow: 0px 0px 3rem 7px #0ef;
     margin-left: 50px;
     opacity: 0.8;
+    border-radius: 30%;
 
 }
 
@@ -222,12 +218,121 @@ span{
     margin: 2rem 0 3rem;
     line-height:1.5 ;
 }
+.services h2{
+    margin-bottom: 5rem;
+}
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+.services-container .services-box{
+    flex:1 1 30rem;
+    background-color: #1f242d;
+    padding:3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #323946;
+    transition: .5s ease;
+    width:300px
+}
+.services-container .services-box:hover{
+    border-color: #0ef;
+    transform: scale(1.02);
+}
+.services-box i{
+    font-size:7rem;
+    color:#0ef;
+}
+.services-box h3{
+    font-size: 2.6rem;
+}
+.services-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+.portfolio{
+    background-color: #323946;
+}
+.portfolio h2{margin-bottom: 4rem;
+
+}
+.portfolio-container{padding: 0px 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.portfolio-container .portfolio-box{width:100%;
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #1f242d;
+    overflow: hidden;
+    display: flex;
+}
+.portfolio-box img{
+    width:100%;
+    height: 100%;
+    transition: .5s ease;
+}
+.portfolio-box .portfolio-layer{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(rgba(0,0,0,.1),#0ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding:0 4rem;
+    transform: translateY(106%);
+    transition: .5s ease;
+
+}
+.portfolio-box:hover .portfolio-layer{
+    transform: translateY(0);
+}
+
+.portfolio-box:hover img{
+    transform: scale(1.1);
+
+}
+.portfolio-layer h4{
+    font-size: 3rem;
+}
+.portfolio-layer p{
+    font-size: 1.6rem;
+    margin:.3rem 0 1rem;
+}
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    width:5rem;
+    height:5rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.portfolio-layer a i{font-size: 3rem;
+    color: #1f242d;
+    padding-top: 10px;
+
+}
 .skill{
     width:100%;
     margin: 60px auto;
     color: #fff;
     padding: 20px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+} 
+.text-center{
+    font-size: 40px;
 }
 .skill li{
     margin: 20px 0;
@@ -334,6 +439,9 @@ span{
         width:90%;
     }
 }
+.contact{
+    background-color: #323946;
+}
 
 
 .contact form{
@@ -384,6 +492,41 @@ span{
     background-color:#1f242d;
     z-index: -1;
 }
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background-color: #1f242d;
+}
+.footer-text p{
+    font-size: 1.6rem;
+}
+.Footer-iconTop a{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    padding: .8rem;
+    background: #0ef;
+    border-radius: .8rem;
+}
+.Footer-iconTop a i{
+    font-size: 2.4rem;
+    color:#323946;
+}
+#preloader{
+    background-color: #000;
+    background-image: url('https://media.tenor.com/UnFx-k_lSckAAAAM/amalie-steiness.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width:100%;
+    position:fixed;
+    z-index: 100;
+
+}
 /* media query */
 @media (max-width:1200px){
     html{
@@ -398,6 +541,7 @@ span{
     section{
         padding:10rem 3 2rem;
     }
+
 
     
 }
@@ -422,16 +566,25 @@ span{
         height:45%;
         padding-top: 50px;
         /* box-shadow: 0px 0px 3rem 5px #0ef; */
-    
-    
-    }
+     }
+     .footer{
+        padding:2rem 3%;
+     }
     /* .navbar{
         padding: 2rem 3%;
     } */
     .section{
         padding: 10rem 3% 2rem;
     }
-
+    .services{
+        padding-bottom: 7rem;
+    }
+    .portfolio{
+        padding-bottom: 7rem;
+    }
+    .contact{
+        min-height: auto;
+    }
 }
 @media(max-width:900px){
     .imagebg img{
@@ -454,6 +607,169 @@ span{
             font-size: 4rem;
             text-align: center;
         }
+        .services h2{
+            margin-bottom: 3rem;
+        }
+        .portfolio h2{
+            margin-bottom: 3rem;
+        }
+        .portfolio-container{
+            grid-template-columns: repeat(2,1fr);
+        }
+        .navbar a{
+            display: block;
+            font-size: 2rem;
+            margin:3rem 0;
+        }
+        .left-setion h3{
+            font-size: 2.6rem;
+        }
+        .left-setion h1{
+            font-size: 5rem;
+        }
+        .imagebg{width:55vw;
+            height:auto;
+            margin-top:4rem;
+            margin-bottom: 8rem;
+
+        }.imagebg img{
+            width: 55vw;
+            height: auto;
+
+            
+        }
+        .aboutrow{
+            flex-direction: column-reverse;
+        }
+        .aboutimg{
+            width:68vw;
+            margin-top: 4rem;
+            position: relative;
+            left: 60px;
+        }
+        .aboutimg img{
+            width:68vw;
+        }
+        /* .imagebg img{
+            width:%;
+            height:auto;
+        } */
+        .home-section{
+            flex-direction: column;
+        }
+    }
+    
+    @media(max-width:592px){
+        .imagebg{
+            margin-bottom: 2rem;}
+    }
+    @media(max-width:491px){
+        .imagebg{width:70vw;
+            height:auto;
+            margin-bottom: 0px;
+            position: relative;
+            top:40px;
+        }
+        .contact{
+            padding-left: 1.7rem;
+            margin-left: 4rem;
+            
+        }
+        .imagebg img{
+            width:70vw;
+            height:auto;
+        }
+        .aboutimg{
+            width:100%;
+            height: auto;
+            margin-top: 4rem;
+            position: relative;
+            left: 50px;
+            top:20px
+        }
+        .aboutimg img{
+            width:100%;
+            height: auto;
+        }
+    @media(max-width:617px){
+        .portfolio-container{padding:0px 90px;
+            grid-template-columns: 1fr;
+        }
+    }
+    @media(max-width:491px){
+        .portfolio-container{padding:0px 30px;
+            grid-template-columns: 1fr;
+        
+    }
+    }
+        /* .navbar a{
+            display: block;
+            font-size: 2rem;
+            margin:3rem 0;
+        } */
+        /* .home-section{
+            flex-direction: column;
+        } */
+        /* .left-section h3{
+            font-size: 2.6rem;
+        }
+        .left-section h1{margin-top: 10px;
+            font-size: 5rem;
+        } */
+        /* .imagebg{margin-top: 30px;
+            width:100%;
+            height:auto;}
+            .home-img {
+            width:60vw;
+            margin-top: 4rem;
+            margin-left: 5rem; */
+        }
+        /* .aboutrow{
+            flex-direction: column-reverse;
+        }
+        .aboutimg{
+            width:70vw;
+            margin-top: 4rem;
+        }
+        .aboutimg img{
+            width: 100%;
+            height: 100%;
+        } */
+        @media(max-width:617px){
+            .portfolio-container{
+                grid-template-columns: 1fr;
+            }
+        }
+        @media(max-width:450px){
+            html{
+                font-size: 50%;
+
+            }
+            .contact form .input-box .input-field{
+                width:100%;
+            }
+        }
+        @media(max-width:365px){
+            .imagebg{
+                width:70vw;
+                height:auto;
+            }
+            .imagebg img{
+                width:90vw;
+                height:auto;
+            }
+            .aboutimg{
+                width:90vw;
+                height: auto;
+                position: relative;
+                top:50px;
+            }
+            
+            .footer{
+                flex-direction: column;
+            }
+        }
+        
     
 /* @media(max-width:1015px){
     .navbar span{

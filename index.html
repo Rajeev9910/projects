@@ -13,9 +13,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet"href="portfolio1.css">
-    <script src="portfolio1.js"></script>
+    
 </head>
 <body>
+    <div id="preloader"></div>
     <!-- navbar design -->
     <div class="container-fluid">
         <div class="container">
@@ -54,7 +55,7 @@
     <div class="left-setion">
         <h3>Hello,It's Me</h3>
         <h1>Rajeev</h1>
-        <h3>And I'm a <span>Frontend Developer</span></h3>
+        <h3 class="container-text">And I'm a <span class="multi-text">Frontend Developer</span></h3>
         <p>Frontend Developer.I Create web pages with UI/UX user interface.I am creative Frontend designer, and I'm very passionate and dedicated to my work.</p>
         <div class="social-media">
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -83,14 +84,96 @@
         <h2 class="heading">About<span id="span2">Me</span></h2>
         <h3>Frontend Developer</h3>
         <p>Frontend Developer with Knowledge in web development and design.I offer the best projects resulting in quality work</p>
-        <a href="#"class="btn">Read More</a>
+        <a href="#"class="btn ">Read More</a>
     </div></div>
 </div>
 </div>
 </div>
-    <!-- service section design -->
+<!-- services section -->
+<section class="services py-5 px-5"id="services">
+    <h2 class="heading">Our <span>Services</span></h2>
+    <div class="services-container px-5">
+        <div class="services-box">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi obcaecati rem hic aliquid neque eveniet nostrum illum accusamus repellendus, explicabo natus suscipit, saepe, deleniti et? Neque nulla illo enim delectus.</p>
+            <a href="#"class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+            <i class="fa-solid fa-palette"></i>
+            <h3>Web Designing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi obcaecati rem hic aliquid neque eveniet nostrum illum accusamus repellendus, explicabo natus suscipit, saepe, deleniti et? Neque nulla illo enim delectus.</p>
+            <a href="#"class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+            <i class="fa-brands fa-envira"></i>
+            <h3>Responsiv Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi obcaecati rem hic aliquid neque eveniet nostrum illum accusamus repellendus, explicabo natus suscipit, saepe, deleniti et? Neque nulla illo enim delectus.</p>
+            <a href="#"class="btn">Read More</a>
+        </div>
+    </div>
+</section>
+<!-- portfolio section -->
+<section class="portfolio py-5"id="portfolio">
+    <h2 class="heading pt-5">Latest <span>Project</span></h2>
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMG9mZmljZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum error unde commodi blanditiis aut explicabo facere rerum, cumque provident obcaecati officiis! Incidunt architecto dignissimos, esse illum et possimus provident!</p>
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="https://media.istockphoto.com/id/1335717953/photo/project-manager-working-on-computer-at-the-office-concept-with-icons-of-management-areas-such.jpg?s=612x612&w=0&k=20&c=HKKel0F9p7u9JL54sDOtYOuR1yVv81LA2ISHmuU7mdM="/></h4>
+            <div class="portfolio-layer">  
+                <h4>Web Design</h4>  
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum error unde commodi blanditiis aut explicabo facere rerum, cumque provident obcaecati officiis! Incidunt architecto dignissimos, esse illum et possimus provident!</p>
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="https://cdn.xxl.thumbs.canstockphoto.com/businessman-hand-working-with-modern-laptop-computer-in-modern-office-with-virtual-icon-diagram-pictures_csp48854183.jpg"alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum error unde commodi blanditiis aut explicabo facere rerum, cumque provident obcaecati officiis! Incidunt architecto dignissimos, esse illum et possimus provident!</p>
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="https://149501111.v2.pressablecdn.com/wp-content/uploads/2022/09/Computer-Science-Project-Ideas-for-Final-Year.webp"alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum error unde commodi blanditiis aut explicabo facere rerum, cumque provident obcaecati officiis! Incidunt architecto dignissimos, esse illum et possimus provident!</p>
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="https://assets.skyfilabs.com/images/blog/be-projects-for-cse.webp"alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum error unde commodi blanditiis aut explicabo facere rerum, cumque provident obcaecati officiis! Incidunt architecto dignissimos, esse illum et possimus provident!</p>
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="https://t4.ftcdn.net/jpg/02/86/21/07/360_F_286210727_1OGvElGnHeQAIKplx4gEWzyaQzzfOfpG.jpg"alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum error unde commodi blanditiis aut explicabo facere rerum, cumque provident obcaecati officiis! Incidunt architecto dignissimos, esse illum et possimus provident!</p>
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- skills section design -->
     <div class="container-fluid my-5 py-5" id="services">
         <div class="container my-5 py-4">
+            <div class="row">
+                <div class="col-12"><h1 class="text-center">My <span>Skills</span></h1></div>
+            </div>
             <div class="row py-3">
                 <div class="col-6">
                     <div class="skill">
@@ -132,7 +215,7 @@
     
     
     <!-- contact section -->
-    <section class="contact"id="contact">
+    <section class="contact py-5 px-5"id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
         <form action="https://formspree.io/f/xgejyjnp"
         method="POST">
@@ -165,5 +248,19 @@
         </form>
 
     </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Rajeev | All Right Reserved.</p>
+        </div>
+        <div class="Footer-iconTop">
+            <a href = "#home"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+    <script>
+        let loader = document.getElementById("preloader");
+    window.addEventListener("load",function(){
+    loader.style.display = 'none';
+});
+    </script>
 </body>
 </html>
